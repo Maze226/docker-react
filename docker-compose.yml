@@ -18,3 +18,5 @@ services:
       - /app/node_modules
       - .:/app
     command: ["npm", "run", "test"]
+  web-server:
+    image: node:alpineb
