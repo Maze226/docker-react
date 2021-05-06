@@ -6,10 +6,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t mrgara/docker-react -f Dockerfile.dev .
+  - docker build -t mrgara/docker-react .
 
 script:
-  - docker run -e CI=true mrgara/docker-react npm run test -- --coverage
+  - docker run CI=true mrgara/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
