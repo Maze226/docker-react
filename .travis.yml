@@ -1,4 +1,4 @@
-language: react.js
+language: node_js
 dist: xenial
 os: linux
 services:
