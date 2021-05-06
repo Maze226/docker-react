@@ -1,5 +1,6 @@
-language: generic
-sudo: required
+language: react.js
+dist: xenial
+os: linux
 services:
   - docker
 
